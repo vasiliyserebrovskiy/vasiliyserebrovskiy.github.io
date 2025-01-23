@@ -12,6 +12,8 @@ nav {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 ul {
@@ -22,13 +24,14 @@ ul {
 
 ul li {
     display: inline;
-    color: black;
+    /*color: black;*/
 }
 
 ul li a {
     text-decoration: none; /* Убираем подчеркивание у ссылок */
     color: black;          /* Цвет текста */
     font-weight: bold;     /* Делаем текст жирным */
+    font-size: 20px;
 }
 
 #logo {
@@ -38,8 +41,40 @@ ul li a {
     font-size: 40px;
     color: black;
     display: flex;
+    padding-left: 10px;
 }
 .navigation-items {
-    color: black;
+    /*color: black;*/
     display: flex;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+/* Заготовка под стили для меньших экранов*/
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Меню в столбик */
+        align-items: center;
+    }
+
+    ul.navigation-items {
+        gap: 10px; /* Уменьшаем расстояние между пунктами */
+    }
+}
+
+/* Стили для экранов шириной до 480px (обычно смартфоны) */
+@media (max-width: 480px) {
+    h2#logo {
+        font-size: 18px; /* Уменьшаем размер логотипа */
+    }
+
+    ul.navigation-items {
+        font-size: 16px; /* Уменьшаем размер шрифта */
+    }
 }
