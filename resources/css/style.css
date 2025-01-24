@@ -49,10 +49,37 @@ ul li a {
     padding-right: 10px;
     font-style: italic;
 }
+/* About me Section */
+.about-me-conteiner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+}
 
+.portrait {
+    display: flex;
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contacts Section */
+.contacts-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Section */
 footer {
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 /* Заготовка под стили для меньших экранов*/
